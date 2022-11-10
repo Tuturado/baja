@@ -234,6 +234,8 @@ CREATE TABLE baja4 (
   wheelAccelRR REAL            
 );
 
+COPY baja1(time, handwheelAngle, throttle, brake, clutch, engineSpeed, PPS, gpsTime, latitude, longitude, altitude, vNorth, vEast, vUp, horizontalSpeed, vxCG, vyCG, vzCG, axCG, ayCG, azCG, yawAngle, pitchAngle, rollAngle, rollRate, pitchRate, yawRate, sideSlip, distance, numSVsTracked, gpsPosMode, gpsVelMode, gpsOrientMode, HDOP, PDOP, posAccuracy_north, posAccuracy_east, posAccuracy_down, velAccuracy_north, velAccuracy_east, velAccuracy_down, orientAccuracy_heading, orientAccuracy_pitch, orientAccuracy_roll, chassisAccelFL, chassisAccelFR, chassisAccelRL, chassisAccelRR, deflectionFL, deflectionFR, deflectionRL, deflectionRR, wheelAccelFL, wheelAccelFR, wheelAccelRL, wheelAccelRR) FROM 'baja1.csv' DELIMITER ';' CSV HEADER;
+
 --with open('df1', "r") as f:
 --   entries = list([line.rstrip().split(';') for line in f])[1:]
 --   for entry in entries:
